@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="SF">
+    <title>Enchéres Noir</title>
+   <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/slide.css">
+
+    <link rel="stylesheet" href="css/chatbox.css">
+    <link rel="stylesheet" href="css/topmenu.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/tarot.css">
+    <link rel="" href="css/slide.css">
+
+
+    <link rel="icon" type="image/svg" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <script src="Tarot.js"></script>
+</head>
+<body id="top">
+  <nav class="topnav">
+    <img src="Images\bitmap.svg" alt="" width="50" class="logo-en">
+    <input type="checkbox" id="toggle" class="inputmenu">
+    <label for="toggle" class="menulabel">&#9776;</label>
+    <div class="topmenu">
+      
+      <img src="Images\bitmap.svg" alt="" width="50" id="logo">
+      <a href="index.html"><span class="icon-heart" id="home"> </span>Home </a>
+      
+      <a href="Tarot.html"><span class="icon-clubs" id="tarrot"> </span>Tarot </a>
+      <a href="Wares.html"><span class="icon-diamonds" id="catalogue"> </span>catalogue</a>
+      <a href="um-okkur.html"><span class="icon-spades" id="about"> </span>About us </a>
+    </div>
+  </nav>
+  <main>
+    <h3 class="gen" id="array"></h3>
+        <button id="generate" onclick="choosePic()">Generate </button>
+        
+        <img src="Images\tarot\0.png" width="305px" height="312px" id="tarotPast" alt="some image" />
+        <img src="Images\tarot\0.png" width="305px" height="312px" id="tarotPresent" alt="some image"/>
+        <img src="Images\tarot\0.png" width="305px" height="312px" id="tarotFuture" alt="some image" />
+  </main>
+</body>

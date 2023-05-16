@@ -1,0 +1,32 @@
+/* order form 
+------------------------------------------------- */
+.order, .job {
+  background-color: var(--form-bg);
+  border: 1px solid;
+  border-radius: 4px;
+  max-width: 48em;
+  margin: 1em auto;
+  padding: 1em 2em;
+}
+.order input[type="email"],
+.order input[type="text"],
+.order input[type="tel"],
+.order input[type="url"],
+.order input[type="date"],
+.order textarea { 
+  width: 100%;
+}
+.order select {
+  background-color: var(--footer-bg);
+  width: 100%;
+}
+.order p,
+.order section p,
+.job p {
+  padding-right: 1em;
+  margin: .3em 0;
+}
+.job legend {
+  margin:0;
+  font-size: 1.4em;
+}

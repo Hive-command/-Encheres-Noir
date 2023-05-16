@@ -1,0 +1,30 @@
+h2 {
+    color: #e09913;
+}
+
+.motto {
+    color: rgb(	152	24	13);
+    font-size: large;
+    font-weight: bold;
+}
+
+.Noir {
+    color: rgb(17, 16, 16);
+}
+
+.Title {
+    text-decoration: wavy;
+    text-shadow: .5px 0.5px black;
+    padding: 15px;
+    color: #e09913;
+    
+}
+
+.Help {
+    font-size: large;
+}
+
+.chat-col {
+    color: white;
+    
+}

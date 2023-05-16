@@ -1,0 +1,40 @@
+/* spjallboxið */
+
+#togl {
+    display:none;
+  }
+  .chatbox {
+  position: fixed;
+  bottom: -40em;
+  right: 1em;
+  transition: all .3s ease-in;
+  background-color: #d48f0e;
+  border: 1px solid;
+  border-radius: 4px;
+  max-width: 22em;
+  margin: 1em auto;
+  padding: .5em;
+}
+.spjall:checked ~ .chatbox {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  transition: all .3s ease-in;
+}
+.contactform input[type="email"],
+.contactform input[type="text"],
+.contactform input[type="tel"],
+.contactform input[type="url"],
+.contactform input[type="date"],
+.contactform textarea { 
+  width: 100%;
+}
+.spjallbutt {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    background-color: #98180D;
+    color: white;
+}

@@ -1,0 +1,15 @@
+.myslides {
+    display: none;
+}
+
+.display {
+    position: relative;
+    padding: 5px;
+    bottom: 30px;
+    outline: none;
+
+}
+
+.slide {
+    margin: 21px
+}

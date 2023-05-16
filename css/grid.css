@@ -1,0 +1,261 @@
+/* - Veljið ykkar Grid lausn: https://gridbyexample.com/examples/ */
+
+/* 6 dálka grid -  Mobile up 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  row-gap: 2em;
+}
+.col-6f {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.container {
+  padding:1em;
+  background-color: #353835;
+  color: white;
+  align-content: center;
+}
+/* vinnurammi til að sjá div*/
+.rammi div{
+  border: 1px dashed #06664e;
+  text-align: center;
+  padding: .5em 0;
+  margin: .5em 0;
+}
+
+body {
+  background-color: rgb(24, 21, 21);
+}
+
+.col-wares {
+  display: grid;
+  
+  gap: 2em;
+  grid-template-areas: 
+  "img1"
+  "inf1"
+  "des1"
+  "img2"
+  "inf2"
+  "des2"
+  "img3"
+  "inf3"
+  "des3"
+  "img4"
+  "inf4"
+  "des4"
+  "img5"
+  "inf5"
+  "des5"
+  "reg";
+} 
+
+.col-main {
+  display: grid;
+  gap: 2em;
+  grid-template-areas: 
+  "con"
+  "Itxt"
+  "Tcon"
+  "Ttxt"
+  "Acon"
+  "Atxt"
+  "Ait";
+}
+
+
+#pic1 {
+  grid-area: img1;
+}
+
+#info1 {
+  grid-area: inf1;
+}
+
+#story1 {
+  grid-area: des1;
+}
+
+#pic2 {
+  grid-area: img2;
+}
+
+#info2 {
+  grid-area: inf2;
+}
+
+#story2 {
+  grid-area: des2;
+}
+
+
+#pic3 {
+  grid-area: img3;
+}
+
+#info3 {
+  grid-area: inf3;
+}
+
+#story3 {
+  grid-area: des3;
+}
+
+#pic4 {
+  grid-area: img4;
+}
+
+#info4 {
+  grid-area: inf4;
+}
+
+#story4 {
+  grid-area: des4;
+}
+
+#pic5 {
+  grid-area: img5;
+}
+
+#info5 {
+  grid-area: inf5;
+}
+
+#story5 {
+  grid-area: des5;
+}
+
+#regis {
+  grid-area: reg;
+}
+
+/*Index grid*/
+
+#icon {
+grid-area: con;
+}
+
+#icon-text {
+grid-area: Itxt;
+}
+
+#Tarrot-icon {
+grid-area: Tcon;
+}
+
+#Tarrot-text {
+grid-area: Ttxt;
+}
+
+#About-icon {
+grid-area: Acon;
+}
+
+#About-text {
+grid-area: Atxt;
+}
+
+#About-items {
+  grid-area: Ait;
+}
+
+.col-info {
+  text-align: left;
+}
+
+.col-infoUl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info-value {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-label {
+  color: #bf8314;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+@media screen and (min-width: 30em) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media screen and (min-width: 37.5em) {
+  .col-2,
+  .col-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .col-3,
+  .col-5,
+  .col-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Larger than mobile */
+@media screen and (min-width: 48em) {
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Larger than tablet */
+@media screen and (min-width: 60em) {
+  .container {
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .col-wares {
+    display: grid;
+    grid-template-areas: 
+    "img1 inf1 des1"
+    "des2 inf2 img2"
+    "img3 inf3 des3"
+    "des4 inf4 img4"
+    "img5 inf5 des5"
+    ". reg . ";
+  
+  }
+  .col-main {
+    display: grid;
+    gap: 2em;
+    grid-template-areas: 
+    "con Itxt"
+    "Ttxt Tcon"
+    "Acon Atxt"
+    "Acon Ait";
+  }
+  }
+
+
+/* Larger than Desktop HD */
+@media (min-width: 80em) {
+  .container {
+    max-width: 62em;
+  }
+}

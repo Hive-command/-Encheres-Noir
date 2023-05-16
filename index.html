@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="SF">
+    <title>Enchéres Noir</title>
+   <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/slide.css">
+
+    <link rel="stylesheet" href="css/chatbox.css">
+    <link rel="stylesheet" href="css/topmenu.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="" href="css/slide.css">
+   
+
+    <link rel="stylesheet" href="css/manslides.css">
+
+    <link rel="icon" type="image/svg" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <nav class="topnav">
+    <img src="Images\bitmap.svg" alt="" width="50" class="logo-en">
+    <input type="checkbox" id="toggle" class="inputmenu">
+    <label for="toggle" class="menulabel">&#9776;</label>
+    <div class="topmenu">
+      
+      <img src="Images\bitmap.svg" alt="" width="50" id="logo">
+      <a href="index.html"><span class="icon-heart" id="home"> </span>Home </a>
+      
+      <a href="Tarot.html"><span class="icon-clubs" id="tarrot"> </span>Tarot </a>
+      <a href="Wares.html"><span class="icon-diamonds" id="catalogue"> </span>catalogue</a>
+      <a href="um-okkur.html"><span class="icon-spades" id="about"> </span>About us </a>
+    </div>
+  </nav>
+  <header class="container" id="top">
+    <section class="landing">
+      <div class="image-slideshow">
+        <div>
+            <img src="Images\Tarot.png" width="1000" height="500px" alt="">
+              <div>
+                <h2><a class="slidelink" href="Tarot.html">Tarotcards</a></h2>
+                  <p>Get a free tarot reading from us</p>
+            </div>
+        </div>
+        <div>
+            <img src="Images\rusted-clever.png" width="1000px" height="500px" alt="">
+              <div>
+                <h2><a class="slidelink" href="Wares.html">catalogue</a></h2>
+                  <p>Check our wonderful items</p>
+              </div>
+          </div>
+        <div>
+            <img src="Images\comedy-tragedy.png" width="1000px" height="500px" alt="">
+              <div>
+                <h2><a class="slidelink" href="um-okkur.html">About us</a></h2>
+                  <p>Tout a un prix</p>
+              </div>
+          </div>
+      </div>
+    </section>
+  </header>
+  <main class="container col-main">
+      <div class="" id="icon"><img class="cicrle-icon" src="Images\ct-icon.png" alt=""></div>
+      <div class="" id="icon-text"><p>At Enchéres Noir, we auction trinkets and furniture with unique traits from trusted sellers. We promise quality instead of quantity at Enchéres Noir and value the privacy of our clients in the highest esteem. We do not divulge any client information or previous sales. As we in Enchéres Noir only have a few items in our auction, the auctioneer can only bid on one object, so choose wisely.
+      </p></div>
+      <div class="" id="Tarrot-icon"><img src="Images\Tarot-icon.png" alt="" width="300"></div>
+      <div class="" id="Tarrot-text"><p>Have you ever heard of Tarot cards? Some say that they are playing cards. Others say that they can predict fate. Well, that's for you to decide, but now we are providing you with an opportunity to get a tarot reading from us. We are giving you a one-of-a-kind chance to see your future. This could be destiny, but wait. What if the very act of reading fate renders it to happen? Do the cards divine fate or cause it?</p></div>
+      <div class="" id="About-icon"><img src="Images\Catalouge-pic1.png" alt=""></div>
+      <div class="" id="About-text"><p>We at Enchéres Noir are a highly specialised auction selling objects with anomalous properties you will never find on the market. This time we are auctioning five items that will surely pique your interest. All items have been Appraised and estimated by staff. We will announce the starting value of the items on the day of the auction.</p></div>
+      <div class="slide" id="About-items">
+        <img class="mySlides" src="Images\Crusader-Medieval-dagger-2-600x400.jpg" alt="" style="width:100%">
+        <img class="mySlides" src="Images\Gerberas_Closeup_Gray_background_Pink_color_591980_600x400.jpg" alt="" style="width:100%">
+        <img class="mySlides" src="Images\Model-T-600-px.webp" alt="" style="width:100%">
+        <img class="mySlides" src="Images\Tick-Tock-Tock-Tick-600px-400px.jpg" alt="" style="width:100%">
+        <button class="display" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="display" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+  </main>
+  <script>
+  var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }</script>
+  <div class="footerbg">
+  <footer class="container col-3">
+    <nav>
+      <ul>
+        <li>Eveniet ducimus pariatur voluptate</li>
+        <li>Vitae animi, sed provident fuga</li>
+        <li>Lorem ipsum dolor sit amet consectetur</li>
+        <li>Provident sit aliquid a consequuntur</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul>
+        <li>Eveniet ducimus pariatur voluptate</li>
+        <li>Vitae animi, sed provident fuga</li>
+        <li>Lorem ipsum dolor sit amet consectetur</li>
+        <li>Provident sit aliquid a consequuntur</li>
+      </ul>
+    </nav>
+    <div>
+      <dl>              <!--Description list -->
+        <dt>Nafn</dt>
+          <dd>Guðmundur Jón Guðjónsson</dd>
+        <dt>Tölvupóstur</dt>
+          <dd>gjg@tskoli.is</dd>
+        <dt>Vefhönnun</dt>
+          <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+      </dl>
+    </div>
+  </footer>
+    <p class="center">&copy 2022 GJG</p>
+  </div>
+</body>
+</html>
